@@ -2,21 +2,27 @@
 #include<math.h>
 int main()
 {
-	float stnum,ndnum,n,total,ave;
+	int stnum, ndnum, x, y;
+	float n, total1, total2, SD;
 	total = 0;
 	n = 0;
-	scanf_s("%d", &stnum);
-	scanf_s("%d", &ndnum);
+	scanf("%d", &stnum);
+	scanf("%d", &ndnum);
 	if (stnum < ndnum)
 	{
-		for (; stnum <= ndnum; stnum++)
+		x = stnum;
+		for (; x <= ndnum; x++)
 		{
-			printf("%d ", stnum);
-			total = total+stnum;
+			printf("%d ", x);
+			total += x;
 			n++;
 		}
-		ave = total / n;
-		printf("\n%f",ave);
+		printf("\n%.1f", total / n);
+		for (; stnum <= ndnum; stnum++)
+		{
+			y =
+		}
+
 	}
 	return 0;
 }
